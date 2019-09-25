@@ -1,0 +1,39 @@
+------------------Assignment 1-------------------------------------
+Webdriver driver = null;
+System.setProperty("webdriver.chrome.driver","path to the driver");
+driver = new ChromeDriver();
+driver.get("https://www.rrrgggbbb.com/");
+Actions act = new Actions(driver);
+act.moveToElement(driver.findElement(By.id("R-fill")));
+act.build().perform();
+String red= driver.findElement(By.cssSelectorValue("fill"));
+if(red.equals("#FF0000"){
+System.out.println("The text color is black and background is red");
+
+act.moveToElement(driver.findElement(By.id("G-fill"));
+act.build().perform();
+String green= driver.findElement(By.cssSelectorValue("fill"));
+if(green.equals("#00FF00"){
+System.out.println("The text color is black and background is green");
+}
+
+act.moveToElement(driver.findElement(By.id("B-fill"));
+act.build().perform();
+String green= driver.findElement(By.cssSelectorValue("fill"));
+if(green.equals("#0000FF"){
+System.out.println("The text color is black and background is green");
+
+
+---------------------------------Assignment 2-----------------------------
+
+Webdriver driver = null;
+System.setProperty("webdriver.chrome.driver","path to the driver");
+driver = new ChromeDriver();
+driver.get("https://www.rrrgggbbb.com/");
+Actions act = new Actions(driver);
+act.moveToElement(driver.findElement(By.id("R-fill")));
+act.build().perform();
+WebElement elm = driver.findElement(By.className("black"));
+if(elm.isvisible()){
+System.out.println("The color has changed");
+}
